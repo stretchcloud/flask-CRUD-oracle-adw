@@ -3,7 +3,7 @@ import csv
 
 DB = "orcl_high"
 DB_USER = "admin"
-DB_PASSWORD = "Citi21direct"
+DB_PASSWORD = "<DB_Password>"
 con = cx_Oracle.connect(DB_USER, DB_PASSWORD, DB)
 cur = con.cursor()
 

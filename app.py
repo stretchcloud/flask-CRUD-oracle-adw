@@ -21,7 +21,7 @@ api = Api(app)
 # add wallet files to wallet folder
 DB = "orcl_high"
 DB_USER = "admin"
-DB_PASSWORD = "Citi21direct"
+DB_PASSWORD = "<DB_Password>"
 
 
 # api endpoint returning version of database from automonous data warehouse

@@ -7,7 +7,7 @@ import cx_Oracle
 
 DB = "orcl_high"
 DB_USER = "admin"
-DB_PASSWORD = "Citi21direct"
+DB_PASSWORD = "<DB_Password>"
 
 
 try:
