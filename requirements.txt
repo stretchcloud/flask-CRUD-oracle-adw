@@ -1,0 +1,6 @@
+flask
+cx_Oracle
+flask-restful
+flask_sqlalchemy
+flask-jsonpify
+flask_swagger_ui
