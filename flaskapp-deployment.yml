@@ -12,7 +12,7 @@ spec:
     spec:
       containers:
       - name: apiapp
-        image: jit2600/apiapp:latest
+        image: jit2600/flaskapioracleadw:latest
         imagePullPolicy: "IfNotPresent"
         ports:
         - containerPort: 5000

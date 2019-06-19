@@ -3,6 +3,7 @@ FROM oraclelinux:7-slim
 # set working directory
 WORKDIR /app
 
+# set variable for Oracle Instant Client
 ARG release=19
 ARG update=3
 
@@ -36,10 +37,10 @@ RUN /opt/rh/rh-python36/root/usr/bin/python3.6 -m pip install --upgrade pip
 RUN /opt/rh/rh-python36/root/usr/bin/python3.6 -m pip install -r requirements.txt
 
 # Create the Database Table and Inject the CSV Data
-#RUN /opt/rh/rh-python36/root/usr/bin/python3.6 createtable.py
-#RUN /opt/rh/rh-python36/root/usr/bin/python3.6 importcsv.py
+RUN /opt/rh/rh-python36/root/usr/bin/python3.6 createtable.py
+RUN /opt/rh/rh-python36/root/usr/bin/python3.6 importcsv.py
 
-### Expose the flask app port and run the main app
+### Expose the flask app port and run the main app#####
 EXPOSE 5000
 ENTRYPOINT ["/opt/rh/rh-python36/root/usr/bin/python3.6"]
 CMD ["app.py"]
